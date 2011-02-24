@@ -1,0 +1,21 @@
+A Collection of Various Useful Scripts
+======================================
+I'll be storing various useful scripts I've found in this repo. These scripts are made primarily for personal use, so there will be some quirks, but feel free to clean them up.
+
+Current List:
+-------------
+* fixFileMode.sh
+    
+    Repairs permissions on a web folder - Folders get 755, Files 644.
+    
+    Note: Just changes permissions, not owner.
+    
+    Usage: sudo ./fixFileMode.sh "target dir"
+
+* passless.sh
+
+    Configures password-less login on remote SSH servers
+
+    Usage: passless.sh user server [port]
+
+    Port is optional - defaults to 22.
