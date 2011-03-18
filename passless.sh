@@ -33,5 +33,5 @@ fi
 echo "Step 2: Creating the .ssh directory on the remote server."
 ssh ${PORT} ${USER}@${SERVER} 'mkdir -p ~/.ssh'
 echo "Step 3: Copying the ssh key to the remote server."
-cat .ssh/id_rsa.pub | ssh ${PORT} ${USER}@${SERVER} 'cat >> ~/.ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh ${PORT} ${USER}@${SERVER} 'cat >> ~/.ssh/authorized_keys'
 echo "Done! You should be able to log in now."
